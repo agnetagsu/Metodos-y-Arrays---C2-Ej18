@@ -30,9 +30,14 @@ namespace Metodos_y_Arrays___C2_Ej18
         }
         static void Main(string[] args)
         {
-            int[] nuevoarray = new int[10];
+            int[] nuevoarray;
             int max, min;
+            int longitud;
             ArraysAleatorios miarray = new ArraysAleatorios();
+            Console.WriteLine("Introduce la longitud del array:");
+            longitud = Convert.ToInt32(Console.ReadLine());
+
+            nuevoarray = new int[longitud];
 
             Console.WriteLine("Introduce el valor mínimo:");
             min = Convert.ToInt32(Console.ReadLine());
